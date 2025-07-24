@@ -30,7 +30,7 @@
   .ticker-data { color:white; margin-right:4px; }
   @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); }
   }
 </style>
 </head>
@@ -73,5 +73,13 @@
 <div class="ticker-item"><img alt="KULR" class="logo" src="https://logo.clearbit.com/kulr.com"/><span class="ticker-symbol">KULR</span><span style="color:#f7931a;">₿</span><span class="ticker-data">1,021</span><span class="ticker-data">($122M)</span></div>
 </div>
 </div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const scroll = document.querySelector('.ticker-scroll');
+  scroll.innerHTML += scroll.innerHTML;
+});
+</script>
+
 </body>
 </html>
